@@ -1,0 +1,144 @@
+html {
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    box-sizing: border-box;
+
+    --cyan: hsl(179, 62%, 43%);
+    --light-cyan: hsl(179, 42%, 50%);
+    --bright-yellow: hsl(71, 73%, 54%);
+    --light-gray: hsl(204, 43%, 93%);
+    --grayish-blue: hsl(218, 22%, 67%);
+}
+
+body{
+    margin: 0;
+    background-color: var(--light-gray);
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a.btn {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 1rem;
+    background-color: blue;
+    border-radius: 5px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    -webkit-box-shadow: 1px 0px 24px -10px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 0px 24px -10px rgba(66, 68, 90, 1);
+    box-shadow: 1px 0px 24px -10px rgba(66, 68, 90, 1);
+}
+
+a.btn.btn-green {
+    background-color: var(--bright-yellow);
+    opacity: 0.85;
+    transition: 0.3s;
+}
+
+a.btn:hover {
+    opacity: 1;
+    color: white;
+}
+
+
+.component {
+    max-width: 375px;
+    border-radius: 5px;
+    overflow: hidden;
+
+    -webkit-box-shadow: 1px 0px 24px -13px rgba(66, 68, 90, 1);
+    -moz-box-shadow: 1px 0px 24px -13px rgba(66, 68, 90, 1);
+    box-shadow: 1px 0px 24px -13px rgba(66, 68, 90, 1);
+}
+
+.component h2 {
+    font-size: 1.1rem;
+}
+
+.component-top {
+    padding: 1rem 2rem;
+    background-color: white;
+}
+
+.component-top h1 {
+    color: var(--cyan);
+}
+
+.component-top h2 {
+    color: var(--bright-yellow);
+}
+
+.component-top p {
+    color: var(--grayish-blue);
+    line-height: 1.5rem;
+}
+
+.component-btm {
+    color: white;
+}
+
+.component-btm .left {
+    padding: 1rem 2rem;
+    background-color: var(--cyan);
+}
+
+.component-btm .left p {
+    margin: 0;
+    padding-top: .5rem;
+    padding-bottom: 1rem;
+}
+
+.component-btm .align-center {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.component-btm span {
+    color: lightgray;
+}
+
+.component-btm span.price {
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-right: 1rem;
+}
+
+.component-btm .right {
+    padding: 1rem 2rem;
+    background-color: var(--light-cyan);
+}
+
+.component-btm .right p {
+    color: var(--light-gray);
+    font-size: .9rem;
+    line-height: 1.3rem;
+    
+}
+
+@media only screen and (min-width: 600px) {
+    html {
+        font-size: 21px ;
+    }
+    .component {
+        max-width: 900px;
+    }
+
+    .component-btm {
+        display: flex;
+    }
+
+    .component-btm .left,
+    .component-btm .right {
+        flex: 1;
+    }
+}
