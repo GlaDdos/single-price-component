@@ -126,9 +126,6 @@ a.btn:hover {
 }
 
 @media only screen and (min-width: 600px) {
-    html {
-        font-size: 21px ;
-    }
     .component {
         max-width: 900px;
     }
